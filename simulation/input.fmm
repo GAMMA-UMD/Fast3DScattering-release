@@ -1,0 +1,31 @@
+Parameters for fast multipole method:
+100	10	6	1.E-4	200000000	100	! maxl     levmx    nexp  tolerance  nstk   iteration
+600000	500000	100	0	10                	! ncellmx  nleafmx  maxk  ifmm       nexpf
+
+
+-----------------------------------------------------------------------------------------
+
+Definitions of the above parameters:
+
+maxl: 	    maximum number of elements in a leaf
+levmx:	    maximum number of tree levels
+nexp:	    order of fast multipole expansions (p)
+tolerance:  tolerance for convergence used in the iterative solver
+nstk:       size of the array used to store coefficients in preconditioner (value > 0 or = 0)
+iteration:  maximum number of iterations allowed for the iterative solver
+ncellmx:    maximum number of cells allowed in the tree
+nleafmx:    maximum number of leaves allowed in the tree
+maxk:       maximum dimension of Krylov subspace used in the iterative solver
+ifmm:	    apply FMM in field evaluation (0-no; 1-yes)
+nexpf:	    number of expansion terms in field evaluation if FMM is used
+
+
+-----------------------------------------------------------------------------------------
+
+Default Values of these parameters:
+
+100	10	6	1.E-4	100000000	500	! maxl     levmx    nexp  tolerance  nstk   iteration
+60000	50000	100	0	10                	! ncellmx  nleafmx  maxk  ifmm       nexpf
+
+
+-----------------------------------------------------------------------------------------
